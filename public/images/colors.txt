@@ -1,0 +1,9 @@
+Font's - Poppins
+
+Background color - #061626
+Header - #0052B5
+Search bg- #3388FF
+Highlighted text color - #67B8FF
+Match BG- 1A2435
+Footer- 051C35
+News - #1B2435
