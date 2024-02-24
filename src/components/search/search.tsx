@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Modal } from "rizzui";
-import SearchTrigger from "@/layouts/hydrogen/search/search-trigger";
-import SearchList from "@/layouts/hydrogen/search/search-list";
+import SearchTrigger from "@/components/search/search-trigger";
+import SearchList from "@/components/search/search-list";
 
 export default function SearchWidget({ className, icon }: { className?: string; icon?: React.ReactNode }) {
   const [open, setOpen] = useState(false);

@@ -1,5 +1,5 @@
-import Header from "@/layouts/hydrogen/header";
-import Sidebar from "@/layouts/hydrogen/sidebar";
+import Header from "@/layouts/header";
+import Sidebar from "@/layouts/sidebar";
 
 export default function HydrogenLayout({ children }: { children: React.ReactNode }) {
   return (

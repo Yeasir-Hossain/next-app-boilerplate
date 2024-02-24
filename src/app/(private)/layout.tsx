@@ -1,7 +1,7 @@
 "use client";
 
 import { useIsMounted } from "@/hooks/use-is-mounted";
-import HydrogenLayout from "@/layouts/hydrogen/layout";
+import HydrogenLayout from "@/layouts/layout";
 import { WiDaySnowThunderstorm } from "react-icons/wi";
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {

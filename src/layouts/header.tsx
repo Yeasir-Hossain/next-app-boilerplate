@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import HamburgerButton from "@/layouts/hamburger-button";
-import SearchWidget from "./search/search";
+import SearchWidget from "../components/search/search";
 import Sidebar from "./sidebar";
 import Logo from "@/components/logo";
 import { useIsMounted } from "@/hooks/use-is-mounted";
