@@ -60,15 +60,16 @@ export default function AdminLoginForm() {
             toast.success(loginResponse?.message);
             if (loginResponse?.data?.role === "admin") {
               replace(routes.admin.dashboard);
-            } else if (loginResponse?.data?.role === "moderator") {
-              replace(routes.moderator.dashboard);
-            } else if (loginResponse?.data?.role === "studioPartner") {
-              replace(routes.studioPartner.dashboard);
-            } else if (loginResponse?.data?.role === "deliveryPartner") {
-              replace(routes.deliveryPartner.dashboard);
-            } else if (loginResponse?.data?.role === "deliveryBoy") {
-              replace(routes.deliveryBoy.dashboard);
             }
+            // else if (loginResponse?.data?.role === "moderator") {
+            //   replace(routes.moderator.dashboard);
+            // } else if (loginResponse?.data?.role === "studioPartner") {
+            //   replace(routes.studioPartner.dashboard);
+            // } else if (loginResponse?.data?.role === "deliveryPartner") {
+            //   replace(routes.deliveryPartner.dashboard);
+            // } else if (loginResponse?.data?.role === "deliveryBoy") {
+            //   replace(routes.deliveryBoy.dashboard);
+            // }
           }
         });
       } else {
@@ -140,10 +141,9 @@ export default function AdminLoginForm() {
                 </div>
               )}
             </Field>
-            <div className='card-actions mt-5 justify-end'>
-              <button type='submit' className='btn btn-primary w-full' disabled={submitting}>
-                Login
-                {submitting && <PiSpinnerLight className='animate-spin text-base' />}
+            <div className='bg-secondary py-3 rounded-md mt-5 justify-end'>
+              <button type='submit' className='flex justify-center items-center w-full font-semibold' disabled={submitting}>
+                {submitting ? <PiSpinnerLight className='animate-spin text-xl' /> : 'Login'}
               </button>
             </div>
           </Form>
